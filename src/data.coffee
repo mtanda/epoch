@@ -47,6 +47,7 @@ Epoch.Data.Format.array = (->
         result.push applyLayerLabel({values: series.map(mapFn)}, options, parseInt(i))
     else
       result.push applyLayerLabel({values: data.map(mapFn)}, options, 0)
+      // reindex
     return result
 
   formatBasicPlot = (data, options) ->
